@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "213170307319",
+    "project_id": "saycure-d9899",
+    "storage_bucket": "saycure-d9899.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213170307319:android:dba5a5699244c6272cd3f2",
+        "android_client_info": {
+          "package_name": "com.example.saycure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213170307319-pls21r14lj8o83oamdtoa9r86gpo0hnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saycure",
+            "certificate_hash": "9dbe07f419881db156000a28fe703427a1161752"
+          }
+        },
+        {
+          "client_id": "213170307319-a6q4ifh9rpe9cst3psr8ncgbqtl3vuoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDor6kCbOydLBMNMkRx63jnPsWyrmmaees"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213170307319-a6q4ifh9rpe9cst3psr8ncgbqtl3vuoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

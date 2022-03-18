@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Search_Hospitals"
+    android:id="@+id/main_layout">
+
+  <!--  <TextView
+        android:id="@+id/search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="10dp"
+        android:text="Search Clinics / Hospitals / Doctors"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold" />  -->
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:layout_marginStart="2dp">
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="24sp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_search_48"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:id="@+id/search_h_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/searchicon"
+            android:hint="@string/clinic_doctor_speciality"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14sp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_bylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_alignParentEnd="true"
+        android:text="Search Hospitals By Location"
+        android:textColor="#3F51B5" />
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_below="@id/search_bylocation"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/all_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/hospitals_l">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textColor="#000000"/>
+            <View
+                android:id="@+id/all_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hospitals_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospitals"
+                android:textColor="#000000"/>
+            <View
+                android:id="@+id/hospitals_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doctors_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/hospitals_l">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctors"
+                android:textColor="#000000"/>
+            <View
+                android:id="@+id/doctors_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_below="@id/layout2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

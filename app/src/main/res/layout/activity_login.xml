@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout1"
+        android:layout_centerHorizontal="true"
+        android:text="SayCure"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCountryCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:text="+91"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--   <android.support.design.widget.TextInputEditText
+                   android:id="@+id/editTextCountryCode"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:inputType="phone"
+                   android:maxLines="1"
+                   android:singleLine="true"
+                   android:text="+880"
+                   android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                   android:textColor="@color/grey_80" /> -->
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--  <android.support.design.widget.TextInputEditText
+                  android:id="@+id/editTextPhone"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Phone Number"
+                  android:inputType="phone"
+                  android:maxLines="1"
+                  android:singleLine="true"
+                  android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                  android:textColor="@color/grey_90">
+
+                  <requestFocus />
+
+              </android.support.design.widget.TextInputEditText>  -->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Login With OTP"/>
+
+        <!--   <android.support.v7.widget.AppCompatButton
+               android:id="@+id/buttonContinue"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/btn_rounded_red"
+               android:text="CONTINUE"
+               android:textColor="@android:color/white" />  -->
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? SignUp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+<!--
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SayCure"
+        android:textSize="32sp"
+        android:layout_gravity="center_horizontal"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingStart="10dp"
+           android:paddingTop="10dp"
+           android:paddingRight="10dp">
+
+
+           <TextView
+               android:id="@+id/title1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/doctors_booking"
+               android:textColor="#000000"
+               android:textSize="24sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/title2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/title1"
+               android:text="@string/has_never_been_this_easy"
+               android:textColor="#1E1D1D"
+               android:textSize="12sp" />
+
+           <LinearLayout
+               android:id="@+id/layout1"
+               android:layout_below="@id/title2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:background="#EA80FC">
+
+                   <ImageView
+                       android:id="@+id/location_icon"
+                       android:layout_width="32sp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_location_on_48"/>
+
+                   <TextView
+                       android:layout_toRightOf="@id/location_icon"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/district"
+                       android:textSize="14sp"
+                       android:layout_centerVertical="true"/>
+
+                   <com.google.android.material.button.MaterialButton
+                       android:layout_alignParentEnd="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/detect"
+                       android:textSize="8sp"
+                       android:drawableEnd="@drawable/ic_baseline_my_location_12"/>
+
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"
+                   android:background="#EA80FC">
+
+                   <ImageView
+                       android:id="@+id/searchicon"
+                       android:layout_width="32sp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_search_48"
+                       android:layout_centerVertical="true"/>
+
+                   <EditText
+                       android:layout_toRightOf="@id/searchicon"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/clinic_doctor_speciality"
+                       android:layout_centerVertical="true"
+                       android:textSize="8sp"/>
+
+
+               </RelativeLayout>
+
+
+           </LinearLayout>
+
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+</LinearLayout>   -->

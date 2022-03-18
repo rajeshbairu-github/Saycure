@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SayCure</string>
+    <string name="doctors_booking">Doctors Booking</string>
+    <string name="has_never_been_this_easy">Has Never Been This Easy</string>
+    <string name="district">District</string>
+    <string name="detect">Detect</string>
+    <string name="clinic_doctor_speciality">Hospital/Clinic/Doctor</string>
+    <string name="clinics">Clinics</string>
+    <string name="doctors">Doctors</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="top_hospitals">Top Hospitals</string>
+    <string name="book_an_appointment_at_best_hospitals_in_kerala">Book An Appointment At Best Hospitals In Kerala</string>
+    <string name="get_appointments_with_leading_doctors">Get Appointments With Leading Doctors</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

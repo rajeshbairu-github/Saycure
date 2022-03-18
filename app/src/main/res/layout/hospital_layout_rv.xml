@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    app:cardElevation="3dp">
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/hospital_logo"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ic_launcher_background"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hsp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/hsp_address"
+                android:text="Hospital Name"
+                android:textSize="10sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/hsp_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Near,SN Park Rd,Payyabalam,Kannur,Kerala 67001"
+                android:textColor="#1B1818"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/dept_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hsp_address"
+                android:text="37"
+                android:textSize="10sp"
+                android:textColor="#3F51B5" />
+
+            <TextView
+                android:id="@+id/dept_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hsp_address"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/dept_count"
+                android:text="Department(s)"
+                android:textSize="10sp"
+                android:textColor="#201D1D" />
+
+            <TextView
+                android:id="@+id/doctor_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hsp_address"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/dept_title"
+                android:text="15"
+                android:textSize="10sp"
+                android:textColor="#3F51B5" />
+
+            <TextView
+                android:id="@+id/doctor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hsp_address"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/doctor_count"
+                android:text="Doctor(s)"
+                android:textSize="10sp"
+                android:textColor="#1E1A1A" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/booknow_bt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
